@@ -3,42 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lam — Personal Space</title>
+  <meta name="theme-color" content="#090b12">
+  <meta name="description" content="Website cá nhân của Nguyen Tung Lam — học sinh THPT Phú Nhuận.">
+  <title>Nguyen Tung Lam — Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <a class="logo" href="#home">LAM<span>.</span></a>
-    <nav><a href="#home">Home</a><a href="#about">About</a><a href="#hobby">Interests</a><a href="#project">Projects</a></nav>
-    <a class="mini-btn" href="#contact">Say hi ↗</a>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Về đầu trang"><span class="brand-mark">TL</span><span>NGUYEN TUNG LAM<span class="brand-dot">.</span></span></a>
+    <nav class="nav-links" id="nav-links" aria-label="Điều hướng chính">
+      <a href="#about">Giới thiệu</a><a href="#interests">Sở thích</a><a href="#projects">Dự án</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Kết nối <span>↗</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Mở menu" aria-expanded="false">☰</button>
   </header>
 
   <main>
-    <section id="home" class="hero">
+    <section class="hero section-wrap" id="home">
       <div class="hero-copy reveal">
-        <p class="eyebrow">PERSONAL WEBSITE / 2026</p>
-        <h1>Hi, I'm <em>Lam.</em><br>Nice to meet you.</h1>
-        <p class="intro">A high-school student who enjoys learning, technology and turning small ideas into creative projects.</p>
-        <div class="actions"><a class="button" href="#about">Explore my world ↓</a><a class="text-link" href="#project">View projects →</a></div>
+        <div class="status"><span class="status-dot"></span> PERSONAL SPACE <span class="status-year">/ 2026</span></div>
+        <p class="hero-kicker">HELLO, WORLD! I'M</p>
+        <h1>Nguyen Tung<br><span class="gradient-text">Lam<span class="cursor">_</span></span></h1>
+        <p class="hero-description">Một học sinh THPT Phú Nhuận, luôn tò mò về thế giới và thích khám phá những điều mới mẻ. Đây là góc nhỏ lưu lại hành trình của mình.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#about">Khám phá thêm <span>↓</span></a><a class="btn btn-quiet" href="#projects">Xem dự án <span>↗</span></a></div>
+        <div class="hero-meta"><span><i></i> STUDENT AT PHU NHUAN HIGH SCHOOL</span><span>SAIGON, VIETNAM</span></div>
       </div>
-      <div class="hero-art reveal">
-        <div class="orb"></div><div class="portrait-card"><div class="avatar">L</div><div><small>HELLO THERE</small><strong>Learning<br>Creating<br>Growing</strong></div></div>
-        <span class="float one">✦</span><span class="float two">+</span><span class="float three">✦</span>
+      <div class="hero-visual reveal" aria-label="Thiết kế chữ cái TL phong cách công nghệ">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="visual-glow"></div>
+        <div class="monogram-card"><div class="card-top"><span>IDENTITY / 001</span><span class="tiny-signal">● ONLINE</span></div><div class="monogram">T<span>L</span></div><div class="card-bottom"><div><small>NAME</small><strong>Nguyen Tung Lam</strong></div><div class="card-code">TL_26<br>VN / HCMC</div></div></div>
+        <span class="float-tag tag-a">CREATIVE MIND ✳</span><span class="float-tag tag-b">STAY CURIOUS ↗</span>
+        <div class="crosshair crosshair-a">+</div><div class="crosshair crosshair-b">+</div>
+      </div>
+      <a class="scroll-hint" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="content-section section-wrap reveal" id="about">
+      <div class="section-label"><span>01</span><span>WHO I AM</span></div>
+      <div class="section-heading"><h2>Không ngừng học hỏi.<br><span class="muted-heading">Không ngừng phát triển.</span></h2><p>Every day is a new chance to learn something.</p></div>
+      <div class="about-grid">
+        <article class="about-panel glass-panel"><span class="panel-symbol">✳</span><p class="about-lead">Xin chào! Mình là <span class="accent">Nguyen Tung Lam</span>.</p><p>Mình hiện là học sinh tại THPT Phú Nhuận. Mình đang trên hành trình tìm hiểu bản thân, tích lũy kiến thức và khám phá những khả năng mới.</p><p>Website này là hồ sơ cá nhân nho nhỏ — nơi mình có thể giới thiệu về bản thân và cập nhật những điều mình đang thực hiện.</p></article>
+        <aside class="profile-panel glass-panel"><div class="profile-top"><span class="profile-avatar">TL</span><span class="availability"><i></i> OPEN TO LEARN</span></div><div class="profile-info"><span class="micro-label">CURRENT ROLE</span><h3>High School Student</h3><p>THPT Phú Nhuận · TP. Hồ Chí Minh</p></div><div class="profile-divider"></div><div class="profile-row"><span>Focus</span><strong>Learn & Explore</strong></div><div class="profile-row"><span>Mindset</span><strong>Stay curious<span class="accent">.</span></strong></div></aside>
       </div>
     </section>
 
-    <section id="about" class="section reveal">
-      <div class="section-head"><p class="eyebrow">01 / ABOUT ME</p><h2>A little about me.</h2></div>
-      <div class="about-grid"><div class="large-card"><p class="big-copy">Mình là Lam — một học sinh THPT đang khám phá thế giới qua việc học, công nghệ và những dự án sáng tạo.</p><p>Mình thích những thứ trực quan, dễ hiểu và đặc biệt thích biến một ý tưởng ban đầu thành một sản phẩm có thể nhìn thấy và sử dụng được.</p></div><div class="stats"><div><b>01</b><span>Student</span></div><div><b>02</b><span>Creator</span></div><div><b>03</b><span>Explorer</span></div></div></div>
+    <section class="content-section section-wrap reveal" id="interests">
+      <div class="section-label"><span>02</span><span>INTERESTS & MINDSET</span></div>
+      <div class="section-heading"><h2>Đang khám phá<br><span class="muted-heading">điều gì?</span></h2><p>Một vài điều mình muốn tìm hiểu thêm.</p></div>
+      <div class="interest-grid">
+        <article class="interest-card"><div class="interest-icon">⌘</div><span class="interest-number">INTEREST / 01</span><h3>Công nghệ</h3><p>Khám phá cách công nghệ hoạt động và cách những ý tưởng trở thành sản phẩm thực tế.</p><span class="card-arrow">↗</span></article>
+        <article class="interest-card interest-highlight"><div class="interest-icon">✳</div><span class="interest-number">INTEREST / 02</span><h3>Sáng tạo</h3><p>Thử những cách thể hiện mới, xây dựng ý tưởng và tạo ra thứ gì đó mang dấu ấn riêng.</p><span class="card-arrow">↗</span></article>
+        <article class="interest-card"><div class="interest-icon">↗</div><span class="interest-number">INTEREST / 03</span><h3>Học hỏi</h3><p>Tiếp thu kiến thức mới từng bước, đặt câu hỏi và phát triển qua mỗi trải nghiệm.</p><span class="card-arrow">↗</span></article>
+      </div>
+      <p class="section-note"><span class="note-star">✳</span> Những mục trên là chủ đề khám phá gợi ý; mình có thể cập nhật lại khi xác định rõ sở thích của bản thân.</p>
     </section>
 
-    <section id="hobby" class="section reveal"><div class="section-head"><p class="eyebrow">02 / INTERESTS</p><h2>Things I enjoy.</h2></div><div class="cards"><article class="card"><span class="icon">01</span><h3>Learning</h3><p>Khám phá kiến thức mới và học qua những ví dụ trực quan.</p></article><article class="card featured"><span class="icon">02</span><h3>Technology</h3><p>Tìm hiểu website, máy tính và cách công nghệ biến ý tưởng thành sản phẩm.</p></article><article class="card"><span class="icon">03</span><h3>Creating</h3><p>Thiết kế và thử nghiệm những sản phẩm nhỏ của riêng mình.</p></article></div></section>
+    <section class="content-section section-wrap reveal" id="projects">
+      <div class="section-label"><span>03</span><span>SELECTED WORK</span></div>
+      <div class="section-heading"><h2>Ý tưởng hôm nay.<br><span class="muted-heading">Sản phẩm ngày mai.</span></h2><p>Những dấu mốc trên hành trình sáng tạo.</p></div>
+      <div class="project-list">
+        <article class="project-item"><div class="project-index">01</div><div class="project-main"><span class="project-type">WEB DESIGN / 2026</span><h3>Website thuyết trình nhóm</h3><p>Một trang web hỗ trợ nội dung thuyết trình bằng bố cục rõ ràng, hình ảnh trực quan và chuyển động vừa đủ.</p></div><div class="project-status"><span class="status-dot"></span> CLASS PROJECT</div><span class="project-arrow">↗</span></article>
+        <article class="project-item"><div class="project-index">02</div><div class="project-main"><span class="project-type">PERSONAL / 2026</span><h3>Personal Portfolio</h3><p>Không gian cá nhân để giới thiệu bản thân, lưu lại các dự án và tiếp tục cập nhật theo thời gian.</p></div><div class="project-status"><span class="status-dot"></span> IN PROGRESS</div><span class="project-arrow">↗</span></article>
+      </div>
+    </section>
 
-    <section id="project" class="section reveal"><div class="section-head"><p class="eyebrow">03 / PROJECTS</p><h2>What I'm building.</h2></div><div class="project-list"><article class="project"><span>01</span><div><h3>Website thuyết trình nhóm</h3><p>Thiết kế web với nội dung rõ ràng, hình ảnh trực quan và chuyển động hỗ trợ bài thuyết trình.</p></div><b>2026 ↗</b></article><article class="project"><span>02</span><div><h3>Personal Website</h3><p>Không gian cá nhân để lưu lại hành trình học tập, sản phẩm và những ý tưởng mới.</p></div><b>NOW ↗</b></article></div></section>
-
-    <section id="contact" class="contact reveal"><p class="eyebrow">04 / KEEP IN TOUCH</p><h2>Thanks for stopping by.</h2><p>Đây mới chỉ là phiên bản đầu tiên. Hành trình của mình vẫn còn tiếp tục.</p><a class="button" href="mailto:your-email@example.com">Send me a message ↗</a></section>
+    <section class="contact-section section-wrap reveal" id="contact"><div class="contact-grid"><div><div class="section-label"><span>04</span><span>THE NEXT CHAPTER</span></div><h2>Let's make<br><span class="gradient-text">something great.</span></h2></div><div class="contact-copy"><p>Cảm ơn bạn đã ghé thăm góc nhỏ của mình. Hành trình vẫn đang tiếp tục — hẹn gặp bạn ở những cập nhật tiếp theo!</p><a class="btn btn-primary" href="#home">Quay lại đầu trang <span>↑</span></a></div></div><div class="contact-bottom"><span>END OF PAGE / MORE TO COME</span><span>✳ KEEP EXPLORING</span></div></section>
   </main>
-  <footer><span>© 2026 LAM</span><span>Made with curiosity & code.</span></footer>
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">TL</span><span>NGUYEN TUNG LAM<span class="brand-dot">.</span></span></a><span>DESIGNED WITH CURIOSITY <span class="accent">✳</span></span><span>© <span id="year">2026</span> NGUYEN TUNG LAM</span></footer>
+  <button id="back-to-top" aria-label="Về đầu trang">↑</button>
   <script src="script.js"></script>
 </body>
 </html>
